@@ -1,22 +1,12 @@
 /* Global styles — apply to the whole site (imported in pages/_app.js) */
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Roboto:wght@400;700&display=swap');
 
 /* Base page styles */
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   font-size: 18px;
   background-color: beige; /* Page background color */
@@ -29,6 +19,7 @@ body {
 
 /* Default link appearance */
 a {
+  font-family: 'Roboto', sans-serif;
   color: #0070f3;
   text-decoration: none;
 }
@@ -44,6 +35,26 @@ img {
   display: block;
 }
 
+/* Titles use BBH Bogle (Google Font) */
+h1,
+h2,
+h3 {
+  font-family: 'BBH Bogle', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
 /* Main heading styles (e.g. the name on the homepage) */
 h1 {
   color: red;
@@ -56,9 +67,10 @@ h1:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Paragraph text styles */
-p, li {
-  font-family: 'Courier New', Courier, monospace;
+/* Paragraph / list text styles */
+p,
+li {
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
