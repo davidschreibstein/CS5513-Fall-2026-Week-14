@@ -37,6 +37,16 @@ export default function Post({ postData }) {
           </div>
         )}
 
+        {postData.image_url && (
+          <p>
+            <img
+              src={postData.image_url}
+              alt={postData.post_title || ''}
+              style={{ maxWidth: '100%', height: 'auto' }}
+            />
+          </p>
+        )}
+
         <div dangerouslySetInnerHTML={{ __html: postData.post_content || '' }} />
       </article>
     </Layout>

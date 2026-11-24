@@ -31,9 +31,9 @@ function ItemList({ items }) {
 }
 
 export default function Home({ allPostsData }) {
-  const posts = allPostsData.filter((item) => item.type === 'post');
-  const games = allPostsData.filter((item) => item.type === 'game');
-  const consoles = allPostsData.filter((item) => item.type === 'console');
+  const movies = allPostsData.filter((item) => item.type === 'movie');
+  const bands = allPostsData.filter((item) => item.type === 'band');
+  const tvShows = allPostsData.filter((item) => item.type === 'tv-show');
 
   return (
     <Layout home>
@@ -42,18 +42,18 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ItemList items={posts} />
+        <h2 className={utilStyles.headingLg}>Movies</h2>
+        <ItemList items={movies} />
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Games</h2>
-        <ItemList items={games} />
+        <h2 className={utilStyles.headingLg}>Bands</h2>
+        <ItemList items={bands} />
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Consoles</h2>
-        <ItemList items={consoles} />
+        <h2 className={utilStyles.headingLg}>TV Shows</h2>
+        <ItemList items={tvShows} />
       </section>
     </Layout>
   );
